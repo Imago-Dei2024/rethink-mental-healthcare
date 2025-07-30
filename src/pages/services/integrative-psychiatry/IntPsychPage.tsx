@@ -1,6 +1,6 @@
 
 
-const IntPsychPage = () => {
+function IntPsychPage () {
   return (
     <div> 
       <section id="int-psych-hero" > 

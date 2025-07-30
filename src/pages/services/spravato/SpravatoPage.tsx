@@ -1,6 +1,6 @@
 
 
-const SpravatoPage = () => {
+function SpravatoPage () {
   return (
     <div> 
       <section id="spravato-hero"> 

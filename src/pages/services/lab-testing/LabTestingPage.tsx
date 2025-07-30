@@ -1,6 +1,6 @@
 
 
-const LabTestingPage = () => {
+function LabTestingPage () {
   return (
     <div>LabTestingPage</div>
   )

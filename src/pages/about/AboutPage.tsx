@@ -1,6 +1,6 @@
+import MissionSection from "../../components/about/MissionSection";
 
-
-const AboutPage = () => {
+function AboutPage () {
   return (
     <div>
       <section id="about-hero-section" > 
@@ -8,7 +8,7 @@ const AboutPage = () => {
       </section> 
 
       <section id="our-mission" > 
-        <p>Mission Section</p>
+        <MissionSection />
       </section> 
 
       <section id="our-approach" > 

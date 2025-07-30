@@ -1,6 +1,6 @@
 
 
-const AppointmentPage = () => {
+function AppointmentPage () {
   return (
     <div>AppointmentPage</div>
   )

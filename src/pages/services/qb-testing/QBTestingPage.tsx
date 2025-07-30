@@ -1,6 +1,6 @@
 
 
-const QBTestingPage = () => {
+function QBTestingPage () {
   return (
     <div> 
       <section id="qb-hero"> 

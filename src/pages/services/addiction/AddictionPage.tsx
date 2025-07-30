@@ -1,6 +1,6 @@
 
 
-const AddictionPage = () => {
+function AddictionPage () {
   return (
     <div>
       <section id="addiction-hero" > 

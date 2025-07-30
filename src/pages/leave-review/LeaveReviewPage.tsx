@@ -1,5 +1,5 @@
 
-const LeaveReviewPage = () => {
+function LeaveReviewPage () {
   return (
     <div>LeaveReviewPage</div>
   )

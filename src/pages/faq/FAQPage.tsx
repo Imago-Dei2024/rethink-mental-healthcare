@@ -1,6 +1,6 @@
 
 
-const FAQPage = () => {
+function FAQPage () {
   return (
     <div>FAQPage</div>
   )

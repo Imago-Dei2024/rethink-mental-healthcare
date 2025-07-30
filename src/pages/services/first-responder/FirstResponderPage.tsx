@@ -1,6 +1,6 @@
 
 
-const FirstResponderPage = () => {
+function FirstResponderPage () {
   return (
     <div> 
       <section id="first-responder-hero"> 

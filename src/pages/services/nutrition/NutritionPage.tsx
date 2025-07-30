@@ -1,6 +1,6 @@
 
 
-const NutritionPage = () => {
+function NutritionPage () {
   return (
     <div> 
       <section id="nutrition-herp"> 

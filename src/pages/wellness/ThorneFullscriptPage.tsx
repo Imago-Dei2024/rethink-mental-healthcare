@@ -1,6 +1,6 @@
 
 
-const ThorneFullscriptPage = () => {
+function ThorneFullscriptPage () {
   return (
     <div> 
       <section id="thorne-fullscript-hero"> 

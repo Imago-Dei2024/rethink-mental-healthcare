@@ -1,6 +1,6 @@
 
 
-const ContactPage = () => {
+function ContactPage () {
   return (
     <div>ContactPage</div>
   )

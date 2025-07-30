@@ -1,6 +1,6 @@
 
 
-const NadPage = () => {
+function NadPage () {
   return (
     <div> 
         <section id="nad-hero"> 

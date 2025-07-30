@@ -1,5 +1,5 @@
 
-const KetaminePage = () => {
+function KetaminePage () {
   return (
     <div> 
       <section id="ketamine-hero"> 

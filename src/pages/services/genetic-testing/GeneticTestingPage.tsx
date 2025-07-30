@@ -1,6 +1,6 @@
 
 
-const GeneticTestingPage = () => {
+function GeneticTestingPage () {
   return (
     <div> 
       <section id="genetic-hero"> 
