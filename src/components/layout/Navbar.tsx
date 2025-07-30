@@ -10,6 +10,22 @@ const Navbar = () => {
   return (
     <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
+
+        <NavigationMenu.Item>
+          <NavigationMenu.Link  
+            className="NavigationMenuLink logo-link" 
+            href="/" 
+            > 
+            <img 
+              src="/logo/ReThink-Logo.svg" 
+              alt="ReThink Logo" 
+              width="38"
+              height="38"  
+            />
+
+          </NavigationMenu.Link> 
+        </NavigationMenu.Item>  
+
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className="NavigationMenuTrigger"> 
             About Us <CaretDownIcon className="CarretDown" aria-hidden />
