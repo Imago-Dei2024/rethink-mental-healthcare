@@ -2,7 +2,11 @@
 
 const QBTestingPage = () => {
   return (
-    <div>QBTestingPage</div>
+    <div> 
+      <section id="qb-hero"> 
+        
+      </section>
+    </div>
   )
 }
 

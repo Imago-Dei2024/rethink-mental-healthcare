@@ -2,7 +2,11 @@
 
 const IntPsychPage = () => {
   return (
-    <div>IntPsychPage</div>
+    <div> 
+      <section id="int-psych-hero" > 
+        
+      </section>
+    </div>
   )
 }
 

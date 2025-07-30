@@ -2,7 +2,11 @@
 
 const GeneticTestingPage = () => {
   return (
-    <div>GeneticTestingPage</div>
+    <div> 
+      <section id="genetic-hero"> 
+        
+      </section>
+    </div>
   )
 }
 

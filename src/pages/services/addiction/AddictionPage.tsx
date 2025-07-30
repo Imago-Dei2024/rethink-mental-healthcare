@@ -2,7 +2,11 @@
 
 const AddictionPage = () => {
   return (
-    <div>AddictionPage</div>
+    <div>
+      <section id="addiction-hero" > 
+        
+      </section>
+    </div>
   )
 }
 

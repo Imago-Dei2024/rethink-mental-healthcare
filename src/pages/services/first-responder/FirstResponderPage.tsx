@@ -2,7 +2,11 @@
 
 const FirstResponderPage = () => {
   return (
-    <div>FirstResponderPage</div>
+    <div> 
+      <section id="first-responder-hero"> 
+        
+      </section>
+    </div>
   )
 }
 

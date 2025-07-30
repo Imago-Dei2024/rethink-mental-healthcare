@@ -2,7 +2,11 @@
 
 const SpravatoPage = () => {
   return (
-    <div>SpravatoPage</div>
+    <div> 
+      <section id="spravato-hero"> 
+        
+      </section>
+    </div>
   )
 }
 
