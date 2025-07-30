@@ -1,0 +1,279 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+
+/* Theme color variables */
+:root {
+  /* Default theme - Dark Blue from logo (#0066cc) */
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0f0ff;
+  --color-primary-200: #bde2ff;
+  --color-primary-300: #90caff;
+  --color-primary-400: #5da9ff;
+  --color-primary-500: #2a85fd;
+  --color-primary-600: #0066cc;
+  --color-primary-700: #0054a8;
+  --color-primary-800: #004385;
+  --color-primary-900: #00356b;
+  --color-primary-600-rgb: 0, 102, 204;
+  
+  --color-secondary-50: #f5f3ff;
+  --color-secondary-100: #ede9fe;
+  --color-secondary-200: #ddd6fe;
+  --color-secondary-300: #c4b5fd;
+  --color-secondary-400: #a78bfa;
+  --color-secondary-500: #8b5cf6;
+  --color-secondary-600: #7c3aed;
+  --color-secondary-700: #6d28d9;
+  --color-secondary-800: #5b21b6;
+  --color-secondary-900: #4c1d95;
+  --color-secondary-600-rgb: 124, 58, 237;
+}
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} 
+
+
+  /* ========== Modern button styles ========== */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium rounded-full shadow-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-[0.98];
+    background-color: var(--color-primary-600);
+    color: white;
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-700);
+  }
+  .btn-primary:focus {
+    @apply ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white border border-neutral-200 text-neutral-800 font-medium rounded-full shadow-sm hover:bg-neutral-50 hover:border-neutral-300 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-primary-500 active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent border font-medium rounded-full hover:bg-opacity-10 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-[0.98];
+    border-color: var(--color-primary-600);
+    color: var(--color-primary-600);
+  }
+  .btn-outline:hover {
+    background-color: var(--color-primary-50);
+  }
+  .btn-outline:focus {
+    @apply ring-primary-500;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent border font-medium rounded-full hover:bg-white/10 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-[0.98];
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+  .btn-outline-light:focus {
+    @apply ring-white;
+  }
+
+  .btn-white {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-primary-700 font-medium rounded-full shadow-sm hover:bg-primary-50 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-[0.98];
+  } 
+  
+  /* ========== Card styles ========== */
+  .card {
+    @apply bg-white rounded-2xl shadow-soft p-6 transition-all duration-300 border border-neutral-100 hover:shadow-lg hover:border-neutral-200;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg hover:-translate-y-1 hover:border-neutral-200;
+  }   
+
+  /* ========== Section styles ========== */
+  .section-container {
+    @apply max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+
+  .full-width-container {
+    @apply max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  } 
+
+  /* ========== Heading styles ========== */
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-bold tracking-tight;
+  }
+
+  .heading-4 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+
+  /* ========== Modern Background Effects ========== */ 
+  .parallax-background-ocean{ 
+    background-image: url("/images/background/waves-background.jpg"); 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: relative; 
+    padding: 1rem 0; 
+  } 
+
+  .parallax-background-rocks { 
+    background-image: url("/images/background/rocks-background.jpg"); 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover;  
+    position: relative; 
+    padding: 1rem 0; 
+  }  
+
+  .parallax-background-hero-ocean { 
+    background-image: url("/images/background/hero-ocean.jpg"); 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover; 
+    position: relative; 
+    padding: 1rem 0; 
+  }
+
+  .background-white { 
+    color: whitesmoke 
+  } 
+
+  /* ========== Gradient text ========== */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-500;
+  } 
+
+  /* ========== Shadow styles ========== */
+  .shadow-soft {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  } 
+
+  /* ========== Card enhancements ========== */
+  .card-rounded {
+    @apply rounded-3xl overflow-hidden;
+  }
+
+  .card-glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/30;
+  } 
+
+
+  /* ========== Gradient borders ========== */
+  .gradient-border {
+    position: relative;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    background-color: white;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -4px;
+    border-radius: inherit;
+    @apply bg-gradient-to-r from-primary-600 to-secondary-500;
+    z-index: -1;
+  }  
+
+  /* ========== DaisyUI and shadcn overrides ========== */
+  .btn-daisy {
+   @apply rounded-xl font-medium text-sm;
+  }
+
+  .card-daisy {
+    @apply rounded-2xl border-neutral-200 shadow-soft;
+  }   
+
+  /* ========== Glass cards and panels ========== */
+  .glass-panel {
+    @apply bg-white/45 dark:bg-neutral-900/70 backdrop-blur-md border border-white/20 dark:border-neutral-800/30 rounded-2xl shadow-soft;
+  }
+
+  .glass-card {
+    @apply glass-panel p-6 transition-all duration-300 hover:shadow-md;
+  }  
+
+  /* ========== Add Shadcn custom styles ========== */
+  .shadcn-border {
+    @apply border border-neutral-200 dark:border-neutral-800;
+  }
+
+  .shadcn-card {
+    @apply rounded-2xl bg-white dark:bg-neutral-900 shadcn-border shadow-soft hover:shadow-md transition-all duration-300;
+  }
+
+  .shadcn-input {
+    @apply rounded-lg border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 focus:ring-2 focus:ring-primary-600 focus:border-transparent;
+  }
+
+  .shadcn-button {
+    @apply rounded-lg font-medium transition-all duration-200 hover:opacity-90 active:scale-[0.98];
+  }
+
+
+
+
+
+ 
