@@ -1,8 +1,12 @@
-
+import HeroSection from "@/components/homePage/HeroSection"
 
 function AppointmentPage () {
   return (
-    <div>AppointmentPage</div>
+    <div> 
+      <section id="appointment-hero"> 
+        <HeroSection /> 
+      </section>
+    </div>
   )
 }
 
