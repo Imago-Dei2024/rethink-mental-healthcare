@@ -1,10 +1,11 @@
+import AboutHeroSection from "../../components/about/AboutHeroSection";
 import MissionSection from "../../components/about/MissionSection";
 
 function AboutPage () {
   return (
     <div>
       <section id="about-hero-section" > 
-
+        <AboutHeroSection /> 
       </section> 
 
       <section id="our-mission" > 

@@ -1,11 +1,10 @@
-
-import './aboutStyles.css'; 
+import styles from './MissionSection.module.css'; 
 
 const MissionSection = () => {
   return (
-    <div className="mission-section"> 
-      <div className="mission-header"> 
-        <div className="mission-icon-container"> 
+    <div className={styles.missionSection}> 
+      <div className={styles.missionHeader}> 
+        <div className={styles.missionIconContainer}> 
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 24 24" 
@@ -14,7 +13,7 @@ const MissionSection = () => {
             strokeWidth="2" 
             strokeLinecap="round" 
             strokeLinejoin="round" 
-            className="mission-icon" 
+            className={styles.missionIcon} 
             > 
             <defs> 
               <linearGradient id="mission-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -26,18 +25,18 @@ const MissionSection = () => {
             <path d="m9 12 2 2 4-4"></path>
           </svg>
         </div> 
-        <h3 className="mission-title">Transforming Mental Health Care</h3>
+        <h3 className={styles.missionTitle}>Transforming Mental Health Care</h3>
       </div> 
 
-      <div className="mission-content"> 
-        <p className="mission-paragraph"> 
+      <div className={styles.missionContent}> 
+        <p className={styles.missionParagraph}> 
           At ReThink Mental Health, our mission is to transform behavioral health care through a compassionate, 
           holistic, and patient-centered approach. We believe that everyone matters and are committed to providing 
           a safe, inclusive space where all individuals can find support, understanding, and empowerment.
         </p>
-        <p className="mission-paragraph"> 
+        <p className={styles.missionParagraph}> 
           Our dedicated team offers personalized care that respects the unique journey of each person, fostering well-being 
-          and resilience in a nurturing environment. Together, we work to <span className="mission-highlight">ReThink</span> and redefine mental health services, 
+          and resilience in a nurturing environment. Together, we work to <span className={styles.missionHighlight}>ReThink</span> and redefine mental health services, 
           ensuring that our doors are always open to everyone.
         </p>
       </div>
