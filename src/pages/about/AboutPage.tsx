@@ -2,6 +2,7 @@ import AboutPhilosophySection from "../../components/about/AboutPhilosophy";
 import AboutHeroSection from "../../components/about/AboutHeroSection";
 import MissionSection from "../../components/about/MissionSection";
 import AboutOurTeamSection from "../../components/about/AboutOurTeamSection";
+import LocationSection from "../../components/layout/LocationSection";
 
 function AboutPage () {
   return (
@@ -27,7 +28,7 @@ function AboutPage () {
       </section> 
 
       <section id="our-location"> 
-        <p>Our Location Section</p>
+        <LocationSection />
       </section>
 
     </div>
