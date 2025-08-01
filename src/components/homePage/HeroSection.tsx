@@ -1,28 +1,28 @@
-import styles from './HeroSection.module.css'; 
+import './HeroSection.css'; 
 
 const HeroSection = () => {
   return (
-    <div className={styles.heroSection}> 
-        <div className={styles.heroContainer}> 
-            <div className={styles.heroContent}> 
-                <div className={styles.heroContentInner}> 
+    <div className="hero-section"> 
+        <div className="hero-container"> 
+            <div className="hero-content"> 
+                <div className="hero-content-inner"> 
                     <img 
                         alt="ReThink Mental Health" 
                         src="/logo/ReThink-Logo.svg" 
-                        className={styles.heroLogo} 
+                        className="hero-logo" 
                     /> 
-                    <div className={styles.heroTopBadge}> 
-                        <div className={styles.heroBadgeLine}></div> 
-                        <p className={styles.heroBadgeText}> Compassionate, Committed, & Courageous</p> 
+                    <div className="hero-top-badge"> 
+                        <div className="hero-badge-line"></div> 
+                        <p className="hero-badge-text"> Compassionate, Committed, & Courageous</p> 
                     </div> 
-                    <h1 className={styles.heroHeading}> 
+                    <h1 className="hero-heading"> 
                         Welcome to ReThink Mental Health & Wellness
                     </h1> 
-                    <p className={styles.heroDescription}> 
+                    <p className="hero-description"> 
                         Expert psychiatry and medication management with integrative approaches. Our doors are open to everyone.
                     </p> 
-                    <div className={styles.heroCtaButtons}> 
-                        <a href="/AppointmentPage" className={styles.heroCtaAppointmentButton}>  
+                    <div className="hero-cta-buttons"> 
+                        <a href="/AppointmentPage" className="hero-cta-appointment-button">  
                             Book Appointment 
                         </a> 
                     </div>
