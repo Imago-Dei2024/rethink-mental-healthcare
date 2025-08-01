@@ -3,6 +3,7 @@ import AboutHeroSection from "../../components/about/AboutHeroSection";
 import MissionSection from "../../components/about/MissionSection";
 import AboutOurTeamSection from "../../components/about/AboutOurTeamSection";
 import LocationSection from "../../components/layout/LocationSection";
+import CallToActionV1 from "../../components/ui/CallToActionV1";
 
 function AboutPage () {
   return (
@@ -29,6 +30,10 @@ function AboutPage () {
 
       <section id="our-location"> 
         <LocationSection />
+      </section> 
+
+      <section id="call-to-action-v1"> 
+        <CallToActionV1 />
       </section>
 
     </div>
