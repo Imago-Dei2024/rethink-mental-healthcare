@@ -1,5 +1,5 @@
-/* Home Page Hero Section Styles - Regular CSS Version */
-.home-page-hero-section {
+/* Services Hero Section Styles - Regular CSS Version */
+.services-hero-section {
   position: relative;
   color: white;
   overflow: hidden;
@@ -9,7 +9,7 @@
   transform: translateX(-50%); /* Center it */
 }
 
-.home-page-hero-background-container {
+.services-hero-background-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
   z-index: 0;
 }
 
-.home-page-hero-light-effect {
+.services-hero-light-effect {
   position: absolute;
   top: 0;
   right: 0;
@@ -30,11 +30,11 @@
   opacity: 0.2;
 }
 
-.home-page-hero-animated-glow {
+.services-hero-animated-glow {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.home-page-hero-diagonal-line-bottom {
+.services-hero-diagonal-line-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -43,7 +43,7 @@
   background: linear-gradient(to top right, rgba(255, 255, 255, 0.05), transparent);
 }
 
-.home-page-hero-diagonal-line-top {
+.services-hero-diagonal-line-top {
   position: absolute;
   top: 0;
   right: 0;
@@ -52,7 +52,7 @@
   background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.05), transparent);
 }
 
-.home-page-hero-content-container {
+.services-hero-content-container {
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem; /* px-6 */
@@ -60,21 +60,21 @@
   z-index: 10;
 }
 
-.home-page-hero-content-inner {
+.services-hero-content-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.home-page-hero-card {
+.services-hero-card {
   background-color: rgba(0, 0, 0, 0.2); /* bg-black/20 */
   backdrop-filter: blur(4px); /* backdrop-blur-sm */
   border-radius: 1rem; /* rounded-2xl */
   padding: 2rem; /* p-8 */
 }
 
-.home-page-hero-badge {
+.services-hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem; /* gap-2 */
@@ -84,18 +84,18 @@
   font-weight: 500; /* font-medium */
 }
 
-.home-page-hero-badge-line {
+.services-hero-badge-line {
   height: 1px; /* h-px */
   width: 3rem; /* w-12 */
   background-color: #2dd4bf; /* bg-teal-400 */
 }
 
-.home-page-hero-badge-text {
+.services-hero-badge-text {
   text-transform: uppercase;
   letter-spacing: 0.05em; /* tracking-wide */
 }
 
-.home-page-hero-title {
+.services-hero-title {
   font-size: 2.25rem; /* text-4xl */
   font-weight: 700; /* font-bold */
   letter-spacing: -0.025em; /* tracking-tight */
@@ -103,14 +103,14 @@
   transition: all 0.7s ease-in-out;
 }
 
-.home-page-hero-title-gradient {
+.services-hero-title-gradient {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(to right, #7dd3fc, #ffffff); /* from-teal-300 to-white */
 }
 
-.home-page-hero-description {
+.services-hero-description {
   margin-top: 1rem; /* mt-4 */
   font-size: 1.25rem; /* text-xl */
   max-width: 42rem; /* max-w-2xl */
@@ -120,90 +120,27 @@
   font-weight: 500; /* font-medium */
 }
 
-.home-page-hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem; /* gap-5 */
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem; /* mt-8 */
-}
-
-.home-page-hero-button-primary {
-  padding: 1rem 2rem; /* px-8 py-4 */
-  border-radius: 0.375rem; /* rounded-md */
-  background-color: white;
-  color: rgb(17, 24, 39); /* text-primary-900 equivalent */
-  font-weight: 500; /* font-medium */
-  font-size: 1.125rem; /* text-lg */
-  transition: all 0.3s ease; /* transition-all duration-300 */
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* gap-2 */
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-}
-
-.home-page-hero-button-primary:hover {
-  background-color: rgb(147, 197, 253); /* hover:bg-blue-300 */
-  transform: scale(1.05); /* hover:scale-105 */
-}
-
-.home-page-hero-button-primary:active {
-  transform: scale(0.95); /* active:scale-95 */
-}
-
-.home-page-hero-button-secondary {
-  padding: 1rem 2rem; /* px-8 py-4 */
-  border-radius: 0.375rem; /* rounded-md */
-  background-color: white;
-  color: rgb(17, 24, 39); /* text-primary-900 equivalent */
-  font-weight: 500; /* font-medium */
-  font-size: 1.125rem; /* text-lg */
-  transition: all 0.3s ease; /* transition-all duration-300 */
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* gap-2 */
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-}
-
-.home-page-hero-button-secondary:hover {
-  background-color: rgb(147, 197, 253); /* hover:bg-blue-300 */
-  transform: scale(1.05); /* hover:scale-105 */
-}
-
-.home-page-hero-button-secondary:active {
-  transform: scale(0.95); /* active:scale-95 */
-}
-
-.home-page-hero-button-icon {
-  margin-left: 0.25rem; /* ml-1 */
-}
-
 /* Responsive Design */
 @media (min-width: 768px) {
-  .home-page-hero-section {
+  .services-hero-section {
     padding: 20rem 0; /* md:py-80 */
   }
   
-  .home-page-hero-card {
+  .services-hero-card {
     padding: 3rem; /* md:p-12 */
   }
   
-  .home-page-hero-title {
+  .services-hero-title {
     font-size: 3rem; /* md:text-5xl */
   }
 }
 
 @media (min-width: 1024px) {
-  .home-page-hero-content-container {
+  .services-hero-content-container {
     padding: 0 2rem; /* lg:px-8 */
   }
   
-  .home-page-hero-title {
+  .services-hero-title {
     font-size: 3.75rem; /* lg:text-6xl */
   }
 }

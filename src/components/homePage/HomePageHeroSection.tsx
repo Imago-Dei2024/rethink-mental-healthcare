@@ -1,4 +1,6 @@
 import './HomePageHeroSection.css';
+// If this is a React Vite project (not Next.js), you should use react-router-dom's Link instead:
+import { Link } from 'react-router-dom';
 
 const HomePageHeroSection = () => {
   return (
@@ -35,7 +37,7 @@ const HomePageHeroSection = () => {
           <div className="home-page-hero-card">
             <div className="home-page-hero-badge">
               <div className="home-page-hero-badge-line"></div>
-              <span className="home-page-hero-badge-text">WELCOME</span>
+              <span className="home-page-hero-badge-text">Compassionate, Committed, Courageous</span>
               <div className="home-page-hero-badge-line"></div>
             </div>
             <h1 className="home-page-hero-title">
@@ -44,6 +46,22 @@ const HomePageHeroSection = () => {
             <p className="home-page-hero-description">
               Expert psychiatry and medication management with integrative approaches. Our doors are open to everyone.
             </p>
+            <div className="home-page-hero-buttons"> {/* START CTA buttons container */}
+              <Link to="/AppointmentPage"> {/* START appointment button link */}
+                <button className="home-page-hero-button-primary">
+                  Book Appointment
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="home-page-hero-button-icon">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </Link> {/* END appointment button link */}
+              <Link to="/ServicesPage"> {/* START services button link */}
+                <button className="home-page-hero-button-secondary">
+                  Our Services
+                </button>
+              </Link> {/* END services button link */}
+            </div> {/* END CTA buttons container */}
           </div> 
         </div>
       </div>
