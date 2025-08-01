@@ -3,6 +3,7 @@ import IntegrativePsychHeroSection from "../../../components/services/Integrativ
 import IntegrativePsychTreatmentSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychTreatmentSection";
 import IntegrativePsychApproachSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychApproachSection";
 import IntegrativePsychBenefitsSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychBenefitsSection";
+import IntegrativePsychGettingStartedSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychGettingStartedSection";
 
 
 function IntPsychPage () {
@@ -26,6 +27,10 @@ function IntPsychPage () {
 
       <section id="int-psych-benefits"> 
         <IntegrativePsychBenefitsSection />
+      </section> 
+
+      <section id="int-psych-getting-started"> 
+        <IntegrativePsychGettingStartedSection />
       </section>
     </div>
   )
