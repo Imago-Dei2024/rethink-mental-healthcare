@@ -1,6 +1,7 @@
 import IntegrativePsychIntroSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychIntroSection";
 import IntegrativePsychHeroSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychHeroSection";
 import IntegrativePsychTreatmentSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychTreatmentSection";
+import IntegrativePsychApproachSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychApproachSection";
 
 
 function IntPsychPage () {
@@ -16,6 +17,10 @@ function IntPsychPage () {
 
       <section id="conditions-we-treat"> 
         <IntegrativePsychTreatmentSection /> 
+      </section> 
+
+      <section id="int-psych-approach" >
+        <IntegrativePsychApproachSection />
       </section>
     </div>
   )
