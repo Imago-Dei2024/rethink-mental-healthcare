@@ -1,3 +1,4 @@
+import AboutPhilosophySection from "../../components/about/AboutPhilosophy";
 import AboutHeroSection from "../../components/about/AboutHeroSection";
 import MissionSection from "../../components/about/MissionSection";
 
@@ -12,8 +13,8 @@ function AboutPage () {
         <MissionSection />
       </section> 
 
-      <section id="our-approach" > 
-        <p>Approach Section</p>
+      <section id="our-approach"> 
+        <AboutPhilosophySection />
       </section>  
 
       <section id="our-team" > 
