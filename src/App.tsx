@@ -31,7 +31,7 @@ function App() {
             <Route path="/" element = {<HomePage />} /> 
 
             <Route path="/AboutPage" element = {<AboutPage />} /> 
-            <Route path="/IntPsych" element = {<IntPsychPage />} /> 
+            <Route path="/IntPsychPage" element = {<IntPsychPage />} /> 
             <Route path="/KetaminePage" element = {<KetaminePage />} /> 
             <Route path="/AddictionPage" element = {<AddictionPage />} /> 
             <Route path="/QBTestingPage" element = {<QBTestingPage />} /> 

@@ -1,0 +1,156 @@
+/* Integrative Psych Hero Section Styles - Regular CSS Version */
+.integrative-psych-hero-section {
+  position: relative;
+  color: white;
+  overflow: hidden;
+  padding: 16rem 0; /* py-64 */
+  width: 100vw; /* Full viewport width */
+  margin-left: 50%;
+  transform: translateX(-50%); /* Center it */
+}
+
+.integrative-psych-hero-background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.integrative-psych-hero-light-effect {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+}
+
+.integrative-psych-hero-animated-glow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.integrative-psych-hero-diagonal-line-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem; /* h-40 */
+  background: linear-gradient(to top right, rgba(255, 255, 255, 0.05), transparent);
+}
+
+.integrative-psych-hero-diagonal-line-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 10rem; /* h-40 */
+  background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.05), transparent);
+}
+
+.integrative-psych-hero-content-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* px-6 */
+  position: relative;
+  z-index: 10;
+}
+
+.integrative-psych-hero-content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.integrative-psych-hero-card {
+  background-color: rgba(0, 0, 0, 0.2); /* bg-black/20 */
+  backdrop-filter: blur(4px); /* backdrop-blur-sm */
+  border-radius: 1rem; /* rounded-2xl */
+  padding: 2rem; /* p-8 */
+}
+
+.integrative-psych-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  margin-bottom: 1.5rem; /* mb-6 */
+  font-size: 0.875rem; /* text-sm */
+  color: #5eead4; /* text-teal-300 */
+  font-weight: 500; /* font-medium */
+}
+
+.integrative-psych-hero-badge-line {
+  height: 1px; /* h-px */
+  width: 3rem; /* w-12 */
+  background-color: #2dd4bf; /* bg-teal-400 */
+}
+
+.integrative-psych-hero-badge-text {
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wide */
+}
+
+.integrative-psych-hero-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: -0.025em; /* tracking-tight */
+  margin-bottom: 1.5rem; /* mb-6 */
+  transition: all 0.7s ease-in-out;
+}
+
+.integrative-psych-hero-title-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #7dd3fc, #ffffff); /* from-teal-300 to-white */
+}
+
+.integrative-psych-hero-description {
+  margin-top: 1rem; /* mt-4 */
+  font-size: 1.25rem; /* text-xl */
+  max-width: 42rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-weight: 500; /* font-medium */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .integrative-psych-hero-section {
+    padding: 20rem 0; /* md:py-80 */
+  }
+  
+  .integrative-psych-hero-card {
+    padding: 3rem; /* md:p-12 */
+  }
+  
+  .integrative-psych-hero-title {
+    font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .integrative-psych-hero-content-container {
+    padding: 0 2rem; /* lg:px-8 */
+  }
+  
+  .integrative-psych-hero-title {
+    font-size: 3.75rem; /* lg:text-6xl */
+  }
+}
+
+/* Keyframe Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
