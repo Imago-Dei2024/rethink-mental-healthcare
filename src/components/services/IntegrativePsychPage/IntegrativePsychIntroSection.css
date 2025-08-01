@@ -1,0 +1,65 @@
+/* Integrative Psych Intro Section Styles - Regular CSS Version */
+.integrative-psych-intro-section {
+  padding: 4rem 0; /* py-16 */
+  background-color: white;
+}
+
+.integrative-psych-intro-container {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+}
+
+.integrative-psych-intro-header {
+  text-align: center;
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.integrative-psych-intro-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 800; /* font-extrabold */
+  color: #111827; /* text-gray-900 */
+}
+
+.integrative-psych-intro-subtitle {
+  margin-top: 1rem; /* mt-4 */
+  max-width: 48rem; /* max-w-3xl */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem; /* text-xl */
+  color: #6b7280; /* text-gray-500 */
+}
+
+.integrative-psych-intro-content {
+  margin-top: 2.5rem; /* mt-10 */
+  max-width: 56rem; /* max-w-4xl */
+  margin-left: auto;
+  margin-right: auto;
+  color: #4b5563; /* text-gray-600 */
+}
+
+.integrative-psych-intro-paragraph {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.625; /* leading-relaxed */
+}
+
+.integrative-psych-intro-paragraph + .integrative-psych-intro-paragraph {
+  margin-top: 1rem; /* mt-4 */
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .integrative-psych-intro-container {
+    padding: 0 1.5rem; /* sm:px-6 */
+  }
+  
+  .integrative-psych-intro-title {
+    font-size: 2.25rem; /* sm:text-4xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .integrative-psych-intro-container {
+    padding: 0 2rem; /* lg:px-8 */
+  }
+}
