@@ -4,6 +4,7 @@ import IntegrativePsychTreatmentSection from "../../../components/services/Integ
 import IntegrativePsychApproachSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychApproachSection";
 import IntegrativePsychBenefitsSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychBenefitsSection";
 import IntegrativePsychGettingStartedSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychGettingStartedSection";
+import IntegrativePsychFAQSection from "../../../components/services/IntegrativePsychPage/IntegrativePsychFAQSection";
 
 
 function IntPsychPage () {
@@ -31,6 +32,10 @@ function IntPsychPage () {
 
       <section id="int-psych-getting-started"> 
         <IntegrativePsychGettingStartedSection />
+      </section> 
+
+      <section id="int-psych-faq"> 
+        <IntegrativePsychFAQSection />
       </section>
     </div>
   )
