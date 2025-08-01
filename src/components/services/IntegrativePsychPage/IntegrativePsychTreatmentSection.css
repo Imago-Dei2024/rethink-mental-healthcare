@@ -1,0 +1,89 @@
+/* Integrative Psych Treatment Section Styles - Regular CSS Version */
+.integrative-psych-treatment-section {
+  padding: 4rem 0; /* py-16 */
+  background-color: #f9fafb; /* bg-gray-50 */
+}
+
+.integrative-psych-treatment-container {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+}
+
+.integrative-psych-treatment-header {
+  text-align: center;
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.integrative-psych-treatment-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 800; /* font-extrabold */
+  color: #111827; /* text-gray-900 */
+}
+
+.integrative-psych-treatment-subtitle {
+  margin-top: 1rem; /* mt-4 */
+  max-width: 48rem; /* max-w-3xl */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem; /* text-xl */
+  color: #6b7280; /* text-gray-500 */
+}
+
+.integrative-psych-treatment-grid {
+  margin-top: 2.5rem; /* mt-10 */
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+  grid-template-columns: 1fr;
+}
+
+.integrative-psych-treatment-card {
+  background-color: white;
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+}
+
+.integrative-psych-treatment-card-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  color: #111827; /* text-gray-900 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.integrative-psych-treatment-card-description {
+  color: #4b5563; /* text-gray-600 */
+}
+
+.integrative-psych-treatment-footer {
+  margin-top: 2rem; /* mt-8 */
+  text-align: center;
+  color: #4b5563; /* text-gray-600 */
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .integrative-psych-treatment-container {
+    padding: 0 1.5rem; /* sm:px-6 */
+  }
+  
+  .integrative-psych-treatment-title {
+    font-size: 2.25rem; /* sm:text-4xl */
+  }
+}
+
+@media (min-width: 768px) {
+  .integrative-psych-treatment-grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .integrative-psych-treatment-container {
+    padding: 0 2rem; /* lg:px-8 */
+  }
+  
+  .integrative-psych-treatment-grid {
+    grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+  }
+}
