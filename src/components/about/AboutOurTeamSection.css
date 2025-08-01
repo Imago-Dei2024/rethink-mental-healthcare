@@ -1,0 +1,368 @@
+/* About Our Team Section Styles - Regular CSS Version */
+.about-our-team-section {
+  position: relative; 
+  color: white; 
+  overflow: hidden; 
+  padding: 16rem 0; 
+  width: 100vw; 
+  margin-left: 50%; 
+  transform: translateX(-50%)
+}
+
+.about-our-team-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* px-6 */
+}
+
+.about-our-team-header {
+  text-align: center;
+  margin-bottom: 4rem; /* mb-16 */
+}
+
+.about-our-team-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  margin-bottom: 1rem; /* mb-4 */
+  font-size: 0.875rem; /* text-sm */
+  color: #4f46e5; /* text-indigo-600 */
+  font-weight: 500; /* font-medium */
+}
+
+.about-our-team-badge-line {
+  height: 1px; /* h-px */
+  width: 2rem; /* w-8 */
+  background-color: #4f46e5; /* bg-indigo-600 */
+}
+
+.about-our-team-badge-text {
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wide */
+}
+
+.about-our-team-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #171717; /* text-neutral-900 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.about-our-team-title-highlight {
+  color: #4f46e5; /* text-indigo-600 */
+}
+
+.about-our-team-subtitle {
+  margin-top: 1rem; /* mt-4 */
+  max-width: 42rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem; /* text-lg */
+  color: #525252; /* text-neutral-600 */
+}
+
+/* Primary Care Providers Section */
+.about-our-team-primary-section {
+  margin-bottom: 4rem; /* mb-16 */
+}
+
+.about-our-team-section-header {
+  text-align: center;
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.about-our-team-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  margin-bottom: 1rem; /* mb-4 */
+  font-size: 0.875rem; /* text-sm */
+  color: #525252; /* text-neutral-600 */
+  font-weight: 500; /* font-medium */
+}
+
+.about-our-team-divider-line {
+  height: 1px; /* h-px */
+  flex: 1;
+  background-color: #a3a3a3; /* bg-neutral-400 */
+}
+
+.about-our-team-section-title {
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wide */
+}
+
+.about-our-team-grid {
+  display: grid;
+  gap: 2rem; /* gap-8 */
+  grid-template-columns: 1fr;
+}
+
+.about-our-team-grid.primary {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-our-team-grid.support {
+  justify-content: center;
+  max-width: 56rem; /* max-w-4xl */
+  margin: 0 auto;
+}
+
+.about-our-team-card {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 0.75rem; /* rounded-xl */
+  border: 1px solid #f5f5f5; /* border-neutral-100 */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-sm */
+  transition: all 0.5s ease-in-out;
+}
+
+.about-our-team-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* hover:shadow-xl */
+  transform: translateY(-0.5rem); /* hover:-translate-y-2 */
+}
+
+.about-our-team-card-image-wrapper {
+  position: relative;
+}
+
+.about-our-team-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px; /* h-1 */
+  background: linear-gradient(to right, #4f46e5, #14b8a6); /* from-indigo-500 to-teal-500 */
+}
+
+.about-our-team-card-image-container {
+  position: relative;
+  height: 18rem; /* h-72 */
+  overflow: hidden;
+}
+
+.about-our-team-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+}
+
+.about-our-team-card:hover .about-our-team-card-image {
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+.about-our-team-card-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(23, 23, 23, 0.6), transparent, transparent); /* bg-gradient-to-t from-neutral-900/60 via-transparent to-transparent */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-our-team-card:hover .about-our-team-card-overlay {
+  opacity: 1; /* hover:opacity-100 */
+}
+
+.about-our-team-card-content {
+  padding: 1.5rem; /* px-6 py-6 */
+}
+
+.about-our-team-card-name {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  color: #171717; /* text-neutral-900 */
+}
+
+.about-our-team-card-title {
+  font-size: 0.875rem; /* text-sm */
+  color: #4f46e5; /* text-indigo-600 */
+  font-weight: 500; /* font-medium */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.about-our-team-card-bio-container {
+  margin-top: 0.75rem; /* mt-3 */
+  color: #404040; /* text-neutral-700 */
+}
+
+.about-our-team-card-bio-preview {
+  font-size: 0.875rem; /* text-sm */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.about-our-team-card-details {
+  margin-top: 0.75rem; /* mt-3 */
+}
+
+.about-our-team-card-details-summary {
+  color: #4f46e5; /* text-indigo-600 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.about-our-team-card-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.about-our-team-card-details-icon {
+  height: 1rem; /* h-4 */
+  width: 1rem; /* w-4 */
+  margin-left: 0.25rem; /* ml-1 */
+  transition: transform 0.3s ease;
+}
+
+.about-our-team-card-details[open] .about-our-team-card-details-icon {
+  transform: rotate(180deg); /* group-open:rotate-180 */
+}
+
+.about-our-team-card-details-content {
+  margin-top: 0.75rem; /* mt-3 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+/* Support Section */
+.about-our-team-support-section {
+  /* No additional styles needed, inherits from grid */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-our-team-title {
+    font-size: 2.25rem; /* md:text-4xl */
+  }
+  
+  .about-our-team-grid.support {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-our-team-container {
+    padding: 0 2rem; /* lg:px-8 */
+  }
+  
+  .about-our-team-grid.primary {
+    grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .about-our-team-section {
+    background-color: #171717; /* dark:bg-neutral-900 */
+  }
+  
+  .about-our-team-badge {
+    color: #a5b4fc; /* dark:text-indigo-400 */
+  }
+  
+  .about-our-team-badge-line {
+    background-color: #a5b4fc; /* dark:bg-indigo-400 */
+  }
+  
+  .about-our-team-title {
+    color: white; /* dark:text-white */
+  }
+  
+  .about-our-team-title-highlight {
+    color: #a5b4fc; /* dark:text-indigo-400 */
+  }
+  
+  .about-our-team-subtitle {
+    color: #a3a3a3; /* dark:text-neutral-400 */
+  }
+  
+  .about-our-team-section-divider {
+    color: #a3a3a3; /* dark:text-neutral-400 */
+  }
+  
+  .about-our-team-divider-line {
+    background-color: #525252; /* dark:bg-neutral-600 */
+  }
+  
+  .about-our-team-card {
+    background-color: #262626; /* dark:bg-neutral-800 */
+    border-color: #404040; /* dark:border-neutral-700 */
+  }
+  
+  .about-our-team-card-name {
+    color: white; /* dark:text-white */
+  }
+  
+  .about-our-team-card-title {
+    color: #a5b4fc; /* dark:text-indigo-400 */
+  }
+  
+  .about-our-team-card-bio-container {
+    color: #d4d4d8; /* dark:text-neutral-300 */
+  }
+  
+  .about-our-team-card-details-summary {
+    color: #a5b4fc; /* dark:text-indigo-400 */
+  }
+}
+
+/* Manual dark mode class support */
+.dark .about-our-team-section {
+  background-color: #171717;
+}
+
+.dark .about-our-team-badge {
+  color: #a5b4fc;
+}
+
+.dark .about-our-team-badge-line {
+  background-color: #a5b4fc;
+}
+
+.dark .about-our-team-title {
+  color: white;
+}
+
+.dark .about-our-team-title-highlight {
+  color: #a5b4fc;
+}
+
+.dark .about-our-team-subtitle {
+  color: #a3a3a3;
+}
+
+.dark .about-our-team-section-divider {
+  color: #a3a3a3;
+}
+
+.dark .about-our-team-divider-line {
+  background-color: #525252;
+}
+
+.dark .about-our-team-card {
+  background-color: #262626;
+  border-color: #404040;
+}
+
+.dark .about-our-team-card-name {
+  color: white;
+}
+
+.dark .about-our-team-card-title {
+  color: #a5b4fc;
+}
+
+.dark .about-our-team-card-bio-container {
+  color: #d4d4d8;
+}
+
+.dark .about-our-team-card-details-summary {
+  color: #a5b4fc;
+}

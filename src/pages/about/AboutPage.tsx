@@ -1,6 +1,7 @@
 import AboutPhilosophySection from "../../components/about/AboutPhilosophy";
 import AboutHeroSection from "../../components/about/AboutHeroSection";
 import MissionSection from "../../components/about/MissionSection";
+import AboutOurTeamSection from "../../components/about/AboutOurTeamSection";
 
 function AboutPage () {
   return (
@@ -18,7 +19,7 @@ function AboutPage () {
       </section>  
 
       <section id="our-team" > 
-        <p>Team Section</p>
+        <AboutOurTeamSection />
       </section> 
 
       <section id="our-office" > 
